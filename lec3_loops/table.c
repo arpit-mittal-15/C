@@ -1,16 +1,12 @@
 #include <stdio.h>
 int main(){
-
   int n;
   printf("Enter a number: ");
   scanf("%d", &n);
-  if (n%2 == 0)
-  {
-    printf("Even number");
-  }
-  else{
-    printf("Odd number");
-  }
   
+  for(int i= 1; i<=10; i++){
+    int multiple = n*i;
+    printf("%d x %d = %d\n", n, i, multiple);
+  }
   return 0;
 }
